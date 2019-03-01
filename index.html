@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+
+
+        var playerSelection=prompt("Rock Paper or Scissors?");
+        var myArray=['rock' , 'paper' , 'scissors'];
+        var random=myArray[Math.floor(Math.random() * myArray.length)];
+        console.log(random);
+
+
+    function results(playerSelection, random){
+      if (playerSelection == random) {
+
+           alert("It's a draw!");
+       } else if (playerSelection == "rock" && random == "scissors") {
+
+           alert("You win! Rock beats scissors");
+       } else if (playerSelection == "paper" && random == "rock") {
+
+           alert("You win! Paper beats rock");
+       } else if (playerSelection == "scissors" && random == "paper") {
+
+           alert("You win! Scissors beats paper");
+       } else if (playerSelection == "rock" && random == "paper") {
+
+           alert("You lose! Paper beats rock!");
+       } else if (playerSelection == "paper" && random == "scissors") {
+
+           alert("You lose! Scissors beats paper");
+       } else if (playerSelection == "scissors" && random == "rock") {
+
+           alert("You lose! Rock beats scissors");
+       } else {
+           alert("Oops! Something went wrong.");
+       }
+     }
+     results(playerSelection, random);
+
+
+
+    </script>
+  </body>
+</html>
